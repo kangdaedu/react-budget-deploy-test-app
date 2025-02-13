@@ -115,7 +115,7 @@ const App = () => {
             <p style={{ fontSize: '2rem' }}>
               총지출 :
               <span>
-                {expenses.reduce((acc, curr) => { return (acc += curr.amount);}, 0)}원
+                {expenses.reduce((acc, curr) => { return (acc += curr.amount);}, 0).toLocaleString()}원
               </span>
             </p>
           </div>
